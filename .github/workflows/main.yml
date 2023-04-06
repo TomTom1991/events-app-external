@@ -5,7 +5,7 @@ on:
 
 env:
   RUN_NUMBER: ${{ github.run_number }}
-  IMAGE: external
+  IMAGE: event_external
 
 jobs:
   build-test_node_project:
