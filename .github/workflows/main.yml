@@ -57,7 +57,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:v1.0.9.${{ github.run_number }} }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:v1.${{ github.run_number }} }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
    
       - name: Set up Docker Buildx
@@ -69,4 +69,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:v1.0.9.${{ github.run_number }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:v1.${{ github.run_number }}
